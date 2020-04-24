@@ -2,3 +2,16 @@ docker-compose build
 docker-compose up
 
 check output/stores.csv
+
+
+Configuration:
+
+modify these files:
+src/main/resources/store_brands.csv
+src/main/resources/tags.csv
+
+and re apply the top commands
+
+
+Search example:
+https://www.communecter.org/#search?text=naturalia
