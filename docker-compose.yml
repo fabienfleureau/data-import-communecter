@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  data-import-communecter:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - $PWD/output:/output
+    user: "${UID}:${GID}"
