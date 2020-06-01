@@ -1,5 +1,6 @@
 package com.eiko.app.api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,9 +17,10 @@ public class Store {
     private String address;
     private String country;
     private String zip;
+    @JsonIgnore
     private String brand;
 
     @JsonProperty("user_rating")
-    private String userRating;
+    private int userRating;
 
 }
